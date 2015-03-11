@@ -17,7 +17,20 @@
     height: 40%;
     z-index: 1;
 }
+#avatar{
+    background-image: url("../image/avatar.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display:block;
+    position:  relative;
+    height: 80%;
+    width: 80%;
+    left: 5%;
+    background-size: contain;
+    top: 10%;
 
+
+}
 #text_content{
     top: 100%;
     left: 20%;
@@ -27,6 +40,7 @@
     z-index: 1;
     text-align: justify;
     background-color: #5C6BC0;
+    font-family: Roboto-Medium;..
 }
 
 #left_panel{
@@ -42,20 +56,18 @@
  }
 
 #sandwich {
-     height:10%;
+     top: 70%;
+     height:30%;
      width:10%;
      display: block;
      position: absolute;
+     background-image: url("../icon_personalPanelTop/Icon_back.png") ;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
  }
-#sandwich:active  #left_panel {display: none}{
 
-    height:10%;
-    width:10%;
-    display: block;
-    position: absolute;
-    background-image: url("../icon_personalPanelTop/sandwich.png");
 
-}
 
 
 
