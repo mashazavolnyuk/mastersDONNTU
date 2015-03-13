@@ -2,20 +2,12 @@
     background-color: #283593;
     position: absolute;
 
-    left: 10%;
+    left: 13%;
     width: 75%;
     height: 40%;
     box-shadow: 1px 15px 25px -15px #000000;
     -webkit-box-shadow: 1px 15px 25px -15px #000000;
     z-index: 3;
-}
-
-#main_content {
-    position: absolute;
-    left: 10%;
-    width: 75%;
-    height: 40%;
-    z-index: 1;
 }
 
 #avatar {
@@ -30,25 +22,26 @@
     background-size: contain;
     top: 10%;
 }
-
 #text_content {
-    top: 100%;
-    left: 25%;
+    top: 40%;
+    left: 13%;
     position: absolute;
     width: 75%;
     height: 200%;
     z-index: 1;
     text-align: match-parent;
+
     background-color: #5C6BC0;
     font-family: Roboto-Medium;
 }
 
 #left_panel {
     background-color: #3f51b5;
-    top: 100%;
+    top: 40%;
+    left: 13%;
     position: absolute;
-    width: 25%;
-    height: 200%;
+    width: 20%;
+    height: 100%;
     z-index: 2;
     box-shadow: 10px 13px 22px -7px #000000;
     -webkit-box-shadow: 10px 13px 22px -7px #000000;
@@ -75,6 +68,8 @@
     height: 70%;
     margin-top: 2%;
     display: inline-block;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
 
 }
 
@@ -89,6 +84,7 @@
 
 .leftText {
     color: white;
+    font-family: Roboto-Medium;
 
 }
 
@@ -105,13 +101,13 @@
     background-image: url("../icon_personalPanelLeft/icon_diploma.png");
 }
 
-#sandwich {
+.UpButton {
     top: 70%;
     height: 30%;
     width: 10%;
     display: block;
     position: absolute;
-    background-image: url("../icon_personalPanelTop/Icon_back.png");
+    background-image: url("../iconTop/sandwich.png");
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;
