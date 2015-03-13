@@ -1,71 +1,121 @@
-#top_panel{
+#top_panel {
     background-color: #283593;
     position: absolute;
+
     left: 10%;
     width: 75%;
     height: 40%;
     box-shadow: 1px 15px 25px -15px #000000;
-    -webkit-box-shadow:1px 15px 25px -15px #000000;
+    -webkit-box-shadow: 1px 15px 25px -15px #000000;
     z-index: 3;
 }
-#main_content{
 
-
+#main_content {
     position: absolute;
     left: 10%;
     width: 75%;
     height: 40%;
     z-index: 1;
 }
-#avatar{
+
+#avatar {
     background-image: url("../image/avatar.png");
     background-repeat: no-repeat;
     background-position: left bottom;
-    display:block;
-    position:  relative;
+    display: block;
+    position: relative;
     height: 80%;
     width: 80%;
     left: 5%;
     background-size: contain;
     top: 10%;
-
-
 }
-#text_content{
+
+#text_content {
     top: 100%;
-    left: 20%;
+    left: 25%;
     position: absolute;
     width: 75%;
-    height: 110%;
+    height: 200%;
     z-index: 1;
-    text-align: justify;
+    text-align: match-parent;
     background-color: #5C6BC0;
-    font-family: Roboto-Medium;..
+    font-family: Roboto-Medium;
 }
 
-#left_panel{
-     background-color: #3f51b5;
-     top: 100%;
-     position: absolute;
-     width: 25%;
-     height: 200%;
-     z-index: 2;
-     box-shadow: 10px 13px 22px -7px #000000;
-     -webkit-box-shadow:10px 13px 22px -7px #000000;
+#left_panel {
+    background-color: #3f51b5;
+    top: 100%;
+    position: absolute;
+    width: 25%;
+    height: 200%;
+    z-index: 2;
+    box-shadow: 10px 13px 22px -7px #000000;
+    -webkit-box-shadow: 10px 13px 22px -7px #000000;
 
- }
+}
 
-#sandwich {
-     top: 70%;
-     height:30%;
-     width:10%;
-     display: block;
-     position: absolute;
-     background-image: url("../icon_personalPanelTop/Icon_back.png") ;
+.blockLeftPanel {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    display: block;
+    left: 3%;
+    word-wrap: break-word;
+
+}
+
+.picterlLeftPanel {
+    position: relative;
+    left: 5%;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;
- }
+    width: 20%;
+    height: 70%;
+    margin-top: 2%;
+    display: inline-block;
+
+}
+
+.textLeftPanel {
+    position: relative;
+    width: 60%;
+    height: 35%;
+    display: inline-block;
+    font-size: 12;
+
+}
+
+.leftText {
+    color: white;
+
+}
+
+#resume {
+    background-image: url("../icon_personalPanelLeft/icon_resume.png");
+}
+
+#bio {
+    background-image: url("../icon_personalPanelLeft/icon_bio.png");
+}
+
+#diploma {
+
+    background-image: url("../icon_personalPanelLeft/icon_diploma.png");
+}
+
+#sandwich {
+    top: 70%;
+    height: 30%;
+    width: 10%;
+    display: block;
+    position: absolute;
+    background-image: url("../icon_personalPanelTop/Icon_back.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+}
 
 
 

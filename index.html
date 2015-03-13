@@ -4,26 +4,65 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="style/panel.css">
-    <script src="../scripts/simpleScript.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/perosnalFont.css">
+
+    <script src="/scripts/simpleScript.js"></script>
+    <script src="scripts/language.js"></script>
+    <script src="jQuery/jquery-1.5.1.min.js"></script>
+
 </head>
 
 
+<body onload="load_default()">
 
-<body>
-    <div id="top_panel">
-        <div id="avatar"></div>
-        <div id="sandwich" onclick="HideOrOpenPanel('left_panel')"></div>
+<div id="top_panel">
+    <div id="avatar"></div>
+    <div id="sandwich"></div>
+</div>
+
+<div id="main_content">
+
+    <div id="text_content">
+    </div>
+
+    <div id="left_panel">
+        <div class="blockLeftPanel">
+            <div class="picterlLeftPanel" id="resume"></div>
+            <div class="textLeftPanel"><span class="leftText"> Резюме</span></div>
         </div>
 
-     <div id="main_content">
-         <div id="text_content">
-             Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке дальнейших направлений развития. Не следует, однако забывать, что рамки и место обучения кадров требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же сложившаяся структура организации позволяет оценить значение систем массового участия. Товарищи! укрепление и развитие структуры играет важную роль в формировании направлений прогрессивного развития. Таким образом дальнейшее развитие различных форм деятельности способствует подготовки и реализации дальнейших направлений развития.
-             Равным образом укрепление и развитие структуры позволяет выполям. Разнообразный и богатый опыт укрепление и развитие структуры позволяет оценить значение новых предложений. С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации форм развития. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
-          </div>
-         <div id="left_panel">
+        <div class="blockLeftPanel">
+            <div class="picterlLeftPanel" id="bio"></div>
+            <div class="textLeftPanel"><span> Автобиография</span></div>
         </div>
-    </div >
 
+        <div class="blockLeftPanel">
+            <div class="picterlLeftPanel" id="diploma"></div>
+            <div class="textLeftPanel"><span> Реферет</span></div>
+        </div>
+
+        <div class="blockLeftPanel">
+            <div class="picterlLeftPanel" id="library"></div>
+            <div class="textLeftPanel"><span> Библиотека</span></div>
+        </div>
+
+        <div class="blockLeftPanel">
+            <div class="picterlLeftPanel" id="inks"></div>
+            <div class="textLeftPanel"><span> Ссылки</span></div>
+        </div>
+
+        <div class="blockLeftPanel">
+            <div class="picterlLeftPanel" id="report"></div>
+            <div class="textLeftPanel"><span> Отчет о поиске</span></div>
+        </div>
+
+
+        <div class="blockLeftPanel">
+            <div class="picterlLeftPanel" id="privateTitle"></div>
+            <div class="textLeftPanel"><span> Индивидуалный раздел</span></div>
+        </div>
+    </div>
+</div>
 
 
 </body>
