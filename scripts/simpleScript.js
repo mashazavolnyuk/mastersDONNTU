@@ -6,3 +6,4 @@ function hideDiv(){
     $( "#left_panel" ).toggle('fast');
 }
 
+//
