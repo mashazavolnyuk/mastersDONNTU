@@ -6,9 +6,3 @@ function hideDiv(){
     $( "#left_panel" ).toggle('fast');
 }
 
-
-function SetLike(){
-
-    VK.init({apiId: 3776132, onlyWidgets: true});
-
-}
