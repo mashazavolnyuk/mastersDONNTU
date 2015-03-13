@@ -4,5 +4,6 @@
 
 $( "sandwich" ).click(function() {
     $( "#left_panel").hide( "slow" );
+
 });
 
