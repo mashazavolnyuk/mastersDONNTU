@@ -1,4 +1,4 @@
-@media screen and (orientation: portrait) {
+@media screen  and (max-device-width: 768px) and (orientation:portrait) {
     .textLeftPanel {
         position: relative;
         width: 0%;
