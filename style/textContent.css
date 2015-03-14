@@ -1,0 +1,29 @@
+.Simpletext{
+    font-family: Roboto-Light;
+    color:white;
+    font-size: 14;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    width: 70%;
+}
+.SimpleTitle {
+    font-family: Roboto-Medium;
+    color: white;
+    text-align: left;
+    font-size: 16;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+}
+#contentText{
+    top: 5%;
+    bottom: 5%;
+    left: 30%;
+    width: 70%;
+    height: auto;
+    position: relative;
+    overflow-y: scroll;
+    overflow: hidden;
+
+}

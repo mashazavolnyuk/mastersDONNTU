@@ -1,7 +1,6 @@
 #top_panel {
     background-color: #283593;
     position: absolute;
-
     left: 13%;
     width: 75%;
     height: 40%;
@@ -22,15 +21,14 @@
     background-size: contain;
     top: 10%;
 }
-#text_content {
+#mainContent {
     top: 40%;
     left: 13%;
     position: absolute;
     width: 75%;
-    height: 200%;
+    min-height: 100%;
     z-index: 1;
     text-align: match-parent;
-
     background-color: #5C6BC0;
     font-family: Roboto-Medium;
 }
