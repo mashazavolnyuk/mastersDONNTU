@@ -9,7 +9,6 @@
     -moz-box-shadow: 1px 15px 25px -15px #000000;;
     z-index: 3;
 }
-
 #avatar {
     background-image: url("../image/avatar.png");
     background-repeat: no-repeat;
@@ -30,17 +29,17 @@
     width: 60%;
     top: 5%;
     left: 25%;
-    font-family: Roboto-Light;
+    font-family: Roboto;
     color: white;
     word-wrap: break-word;
 }
 .topTitleText{
     text-align: left;
-    font-size: 14;
-    font-weight: bolder;
-    cursor: pointer;
-}
 
+}
+.topSimpleText{
+
+}
 .panelLanguage{
 
     position: relative;
@@ -56,9 +55,15 @@
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
+    opacity: 0.5;
     top:10%;
     height: 30%;
     width: 60%;
+}
+.language:hover{
+    opacity: 1;
+
+
 }
 #ru {
     background-image: url("../iconTop/ru_flag.png");
@@ -72,8 +77,6 @@
 
     background-image: url("../iconTop/en_flag.png");
 }
-
-
 #mainContent {
     top: 40%;
     left: 13%;
@@ -83,7 +86,7 @@
     z-index: 1;
     text-align: match-parent;
     background-color: #5C6BC0;
-    font-family: Roboto-Medium;
+    font-family: Roboto;
 }
 
 #left_panel {
@@ -143,7 +146,7 @@
 
 .leftText {
     color: white;
-    font-family: Roboto-Medium;
+    font-family: Roboto;
 
 }
 

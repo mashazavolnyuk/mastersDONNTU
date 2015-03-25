@@ -1,5 +1,5 @@
 .Simpletext{
-    font-family: Roboto-Light;
+    font-family: Roboto;
     color:white;
     font-size: 14;
     position: relative;
@@ -8,7 +8,7 @@
     width: 70%;
 }
 .SimpleTitle {
-    font-family: Roboto-Medium;
+    font-family: Roboto;
     color: white;
     text-align: left;
     font-size: 16;
