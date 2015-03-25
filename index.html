@@ -22,15 +22,33 @@
 
 <div id="top_panel">
     <div id="avatar"></div>
-    <div class="language"></div>
+    <div id="topTextPanel">
+        <span class="topTitleText">
+            Завольнюк Мария Андреевна
+        </span>
+        <br>
+         <span class="topSimpleText">
+            Институт информатики и искусственного интеллекта
+            Кафедра программного обеспечения интеллектуальных систем
+            Специальность «Программное обеспечение систем.
+         </span>
+        <br>
+            <span class="topTitleText">
+             Дослідження та підвищення ефективності алгоритмів розв'язання
+             одновимірних задач розподілу ресурсів
+            </span>
+    </div>
+    <div class="panelLanguage">
+        <div class="language" id="ru"></div>
+        <div class="language" id="uk"></div>
+        <div class="language" id="en"></div>
+    </div>
 </div>
-
-
 
 
 <div id="left_panel">
     <div class="blockLeftPanel">
-        <div class="picterlLeftPanel" id="resume"></div>
+        <div class="picterlLeftPanel" id="resume" onclick="switchInformation(0)"></div>
         <div class="textLeftPanel" onclick="switchInformation(0)"><span class="leftText"> Резюме</span></div>
     </div>
 
@@ -40,7 +58,7 @@
     </div>
 
     <div class="blockLeftPanel">
-        <div class="picterlLeftPanel" id="diploma"></div>
+        <div class="picterlLeftPanel" id="diploma" onclick="setCurrentLanguage(2)"></div>
         <div class="textLeftPanel"><span class="leftText"> Реферет</span></div>
     </div>
 
@@ -64,6 +82,7 @@
         <div class="picterlLeftPanel" id="privateTitle"></div>
         <div class="textLeftPanel"><span class="leftText"> Индивидуалный раздел</span></div>
     </div>
+
 </div>
 
 <div id="mainContent">

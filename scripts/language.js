@@ -4,6 +4,6 @@
 
 function load_default(){
      $("#contentText").load("language/ru/ru_resume.html #Resume_russian > *");
-    setCurrentLanguage(2);
+     setCurrentLanguage(0);
 }
 
