@@ -13,6 +13,7 @@
     <script src="scripts/simpleScript.js"></script>
     <script src="scripts/language.js"></script>
     <script src="jQuery/jquery-1.5.1.min.js"></script>
+    <script src="scripts/switchingInformation.js"></script>
 
 </head>
 
@@ -21,9 +22,7 @@
 
 <div id="top_panel">
     <div id="avatar"></div>
-    <div class="UpButton" id="back" onclick="hideDiv();"></div>
     <div class="language"></div>
-
 </div>
 
 
@@ -32,12 +31,12 @@
 <div id="left_panel">
     <div class="blockLeftPanel">
         <div class="picterlLeftPanel" id="resume"></div>
-        <div class="textLeftPanel"><span class="leftText"> Резюме</span></div>
+        <div class="textLeftPanel" onclick="switchInformation(0)"><span class="leftText"> Резюме</span></div>
     </div>
 
     <div class="blockLeftPanel">
         <div class="picterlLeftPanel" id="bio"></div>
-        <div class="textLeftPanel"><span class="leftText"> Автобиография</span></div>
+        <div class="textLeftPanel" onclick="switchInformation(1)"><span class="leftText"> Автобиография</span></div>
     </div>
 
     <div class="blockLeftPanel">
