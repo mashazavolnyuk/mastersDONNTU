@@ -163,8 +163,19 @@
 
     background-image: url("../icon_personalPanelLeft/icon_diploma.png");
 }
+#library{
+    background-image: url("../icon_personalPanelLeft/icon_book.png");
 
-
+}
+#links{
+    background-image: url("../icon_personalPanelLeft/icon_links.png");
+}
+#report{
+    background-image: url("../icon_personalPanelLeft/icon_report.png");
+}
+#privateTitle{
+    background-image: url("../icon_personalPanelLeft/icon_star.png");
+}
 
 
 
