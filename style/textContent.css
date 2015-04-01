@@ -5,7 +5,7 @@
     position: relative;
     text-align: left;
     display: inline-block;
-    width: 70%;
+    width: 65%;
 }
 .SimpleTitle {
     font-family: Roboto;
@@ -27,4 +27,9 @@
     padding-top: 3%;
     overflow-y: scroll;
     overflow: hidden;
+
+}
+.TitleExp{
+    text-decoration: underline;
+    color: midnightblue;
 }
