@@ -1,8 +1,5 @@
 @font-face {
 
     font-family: Roboto; /* имя шрифта для CSS правил */
-    src: local("Roboto"), /* проверяем наличие шрифта в ОС пользователя */
-    url(../fonts/Roboto-Medium.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
-    url(../fonts/Roboto-Light.ttf);
 
 }
