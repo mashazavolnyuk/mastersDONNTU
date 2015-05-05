@@ -1,3 +1,6 @@
-/**
- * Created by Merry on 25.03.2015.
-
+function hideRemortOld(){
+    $('.table_report').toggle();
+}
+function hideReportNew(){
+    $('.table_reportNew').toggle();
+}

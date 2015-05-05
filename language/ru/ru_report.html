@@ -3,25 +3,218 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <script src="scripts/effect.js"></script>
+    <script src="jQuery/jquery-1.5.1.min.js"></script>
+
 </head>
 <body>
 
-
+<div class="GlobalReport">
+    <div class="Report" onclick="hideRemortOld()"><span>Отчет за март</span>
     <div class="table_report">
-
-        <div class="title_report">
-            <div id="titleReport"><span>Строка поиска</span></div>
-            <div id="Google"></div>
-            <div id="Yandex"></div>
-            <div id="Bing"></div>
-            <div id="Meta"></div>
+        <div class="reportBlock">
+            <div class="textReport"><span>СТРОКА ПОИСКА</span></div>
+            <div  class="Google" id="G"><span class="FinderReport">GOOGLE</span></div>
+            <div  class="Yandex" id="Y"><span class="FinderReport">ЯНДЕКС</span></div>
+            <div  class="Bing" id="B"><span class="FinderReport">BING</span></div>
+            <div  class="Meta" id="M"><span class="FinderReport">META</span></div>
         </div>
-
+        <div class="title_report" id="ruReport"><span> На русском языке</span></div>
+        <div class="reportBlock">
+            <div class="textReport"><span>Исследование и оценка эффективности алгоритмов решения одномерных задач распределения ресурсов</span>
+            </div>
+            <div class="Google"><span>19 300</span></div>
+            <div class="Yandex"><span>328 тыс</span></div>
+            <div class="Bing"><span>30,700</span></div>
+            <div class="Meta"><span>3 390</span></div>
+        </div>
+        <div class="reportBlock">
+            <div class="textReport"><span>Маслова Наталья Александровна, ДонНТУ</span></div>
+            <div class="Google"><span>2 940</span></div>
+            <div class="Yandex"><span>78 тыс</span></div>
+            <div class="Bing"><span>19</span></div>
+            <div class="Meta"><span>30</span></div>
+        </div>
+        <div class="reportBlock">
+            <div class="textReport"><span>Одномерные задачи</span></div>
+            <div class="Google"><span>400 тыс</span></div>
+            <div class="Yandex"><span>775 тыс</span></div>
+            <div class="Bing"><span>33,300</span></div>
+            <div class="Meta"><span>70 600</span></div>
+        </div>
+        <div class="reportBlock">
+            <div class="textReport"><span>Задачи распределения ресурсов</span></div>
+            <div class="Google"><span>873 тыс</span></div>
+            <div class="Yandex"><span>3 млн</span></div>
+            <div class="Bing"><span>61 100</span></div>
+            <div class="Meta"><span>163 тыс</span></div>
+        </div>
+        <div class="title_report" id="ukReport"><span> На украинском языке</span></div>
+        <div class="reportBlock">
+            <div class="textReport"><span>Дослідження та оцінка ефективності алгоритмів розв'язування одновимірних задач розподілу ресурсів</span>
+            </div>
+            <div class="Google"><span>7 820</span></div>
+            <div class="Yandex"><span>100 тыс</span></div>
+            <div class="Bing"><span>1,050</span></div>
+            <div class="Meta"><span>0</span></div>
+        </div>
+        <div class="reportBlock">
+            <div class="textReport"><span>Маслова Наталія Олександрівна,ДонНТУ</span></div>
+            <div class="Google"><span>3 540</span></div>
+            <div class="Yandex"><span>52 тыс</span></div>
+            <div class="Bing"><span>21</span></div>
+            <div class="Meta"><span>5</span></div>
+        </div>
+        <div class="reportBlock">
+            <div class="textReport"><span>одномірні задачі</span></div>
+            <div class="Google"><span>60 800</span></div>
+            <div class="Yandex"><span>23 тыс</span></div>
+            <div class="Bing"><span>796</span></div>
+            <div class="Meta"><span>3 040</span></div>
+        </div>
+        <div class="reportBlock">
+            <div class="textReport"><span>Задачі розподілу ресурсів</span></div>
+            <div class="Google"><span>747 тыс</span></div>
+            <div class="Yandex"><span>747 тыс</span></div>
+            <div class="Bing"><span>33,200</span></div>
+            <div class="Meta"><span>153 тыс</span></div>
+        </div>
+        <div class="title_report" id="enReport"><span> На английском языке</span></div>
+        <div class="reportBlock">
+            <div class="textReport"><span>Research and evaluation of algorithms for solving one-dimensional problems of resource allocation</span>
+            </div>
+            <div class="Google"><span>1 млн 830 тыс</span></div>
+            <div class="Yandex"><span>1 млн</span></div>
+            <div class="Bing"><span>72,600</span></div>
+            <div class="Meta"><span>1 520 000</span></div>
+        </div>
+        <div class="reportBlock">
+            <div class="textReport"><span>Natalia Maslova, DonNTU</span></div>
+            <div class="Google"><span>8 110</span></div>
+            <div class="Yandex"><span>55 тыс</span></div>
+            <div class="Bing"><span>72,600</span></div>
+            <div class="Meta"><span> 238</span></div>
+        </div>
+        <div class="reportBlock">
+            <div class="textReport"><span>one-dimensional problems</span></div>
+            <div class="Google"><span>34 млн 900 тыс</span></div>
+            <div class="Yandex"><span>80 млн</span></div>
+            <div class="Bing"><span>1,930,000</span></div>
+            <div class="Meta"><span>16 млн</span></div>
+        </div>
+        <div class="reportBlock">
+            <div class="textReport"><span>The problems of resource allocation</span></div>
+            <div class="Google"><span>10 млн 300 тыс</span></div>
+            <div class="Yandex"><span>5 млн</span></div>
+            <div class="Bing"><span>146 млн</span></div>
+            <div class="Meta"><span>8 млн 10 тыс</span></div>
+        </div>
     </div>
+   </div>
 
-
-
-
+    <div class="Report" onclick="hideReportNew()"><span>Отчет за май</span>
+        <div class="table_reportNew">
+            <div class="reportBlock">
+                <div class="textReport"><span>СТРОКА ПОИСКА</span></div>
+                <div  class="Google" id="Gnew"><span class="FinderReport">GOOGLE</span></div>
+                <div  class="Yandex" id="Ynew"><span class="FinderReport">ЯНДЕКС</span></div>
+                <div  class="Bing" id="Bnew"><span class="FinderReport">BING</span></div>
+                <div  class="Meta" id="Mnew"><span class="FinderReport">META</span></div>
+            </div>
+            <div class="title_report" id="ruReportnew"><span> На русском языке</span></div>
+            <div class="reportBlock">
+                <div class="textReport"><span>Исследование и оценка эффективности алгоритмов решения одномерных задач распределения ресурсов</span>
+                </div>
+                <div class="Google"><span>19 300</span></div>
+                <div class="Yandex"><span>328 тыс</span></div>
+                <div class="Bing"><span>30,700</span></div>
+                <div class="Meta"><span>3 390</span></div>
+            </div>
+            <div class="reportBlock">
+                <div class="textReport"><span>Маслова Наталья Александровна, ДонНТУ</span></div>
+                <div class="Google"><span>2 940</span></div>
+                <div class="Yandex"><span>78 тыс</span></div>
+                <div class="Bing"><span>19</span></div>
+                <div class="Meta"><span>30</span></div>
+            </div>
+            <div class="reportBlock">
+                <div class="textReport"><span>Одномерные задачи</span></div>
+                <div class="Google"><span>400 тыс</span></div>
+                <div class="Yandex"><span>775 тыс</span></div>
+                <div class="Bing"><span>33,300</span></div>
+                <div class="Meta"><span>70 600</span></div>
+            </div>
+            <div class="reportBlock">
+                <div class="textReport"><span>Задачи распределения ресурсов</span></div>
+                <div class="Google"><span>873 тыс</span></div>
+                <div class="Yandex"><span>3 млн</span></div>
+                <div class="Bing"><span>61 100</span></div>
+                <div class="Meta"><span>163 тыс</span></div>
+            </div>
+            <div class="title_report" id="ukReportnew"><span> На украинском языке</span></div>
+            <div class="reportBlock">
+                <div class="textReport"><span>Дослідження та оцінка ефективності алгоритмів розв'язування одновимірних задач розподілу ресурсів</span>
+                </div>
+                <div class="Google"><span>7 820</span></div>
+                <div class="Yandex"><span>100 тыс</span></div>
+                <div class="Bing"><span>1,050</span></div>
+                <div class="Meta"><span>0</span></div>
+            </div>
+            <div class="reportBlock">
+                <div class="textReport"><span>Маслова Наталія Олександрівна,ДонНТУ</span></div>
+                <div class="Google"><span>3 540</span></div>
+                <div class="Yandex"><span>52 тыс</span></div>
+                <div class="Bing"><span>21</span></div>
+                <div class="Meta"><span>5</span></div>
+            </div>
+            <div class="reportBlock">
+                <div class="textReport"><span>одномірні задачі</span></div>
+                <div class="Google"><span>60 800</span></div>
+                <div class="Yandex"><span>23 тыс</span></div>
+                <div class="Bing"><span>796</span></div>
+                <div class="Meta"><span>3 040</span></div>
+            </div>
+            <div class="reportBlock">
+                <div class="textReport"><span>Задачі розподілу ресурсів</span></div>
+                <div class="Google"><span>747 тыс</span></div>
+                <div class="Yandex"><span>747 тыс</span></div>
+                <div class="Bing"><span>33,200</span></div>
+                <div class="Meta"><span>153 тыс</span></div>
+            </div>
+            <div class="title_report" id="enReportnew"><span> На английском языке</span></div>
+            <div class="reportBlock">
+                <div class="textReport"><span>Research and evaluation of algorithms for solving one-dimensional problems of resource allocation</span>
+                </div>
+                <div class="Google"><span>1 млн 830 тыс</span></div>
+                <div class="Yandex"><span>1 млн</span></div>
+                <div class="Bing"><span>72,600</span></div>
+                <div class="Meta"><span>1 520 000</span></div>
+            </div>
+            <div class="reportBlock">
+                <div class="textReport"><span>Natalia Maslova, DonNTU</span></div>
+                <div class="Google"><span>8 110</span></div>
+                <div class="Yandex"><span>55 тыс</span></div>
+                <div class="Bing"><span>72,600</span></div>
+                <div class="Meta"><span> 238</span></div>
+            </div>
+            <div class="reportBlock">
+                <div class="textReport"><span>one-dimensional problems</span></div>
+                <div class="Google"><span>34 млн 900 тыс</span></div>
+                <div class="Yandex"><span>80 млн</span></div>
+                <div class="Bing"><span>1,930,000</span></div>
+                <div class="Meta"><span>16 млн</span></div>
+            </div>
+            <div class="reportBlock">
+                <div class="textReport"><span>The problems of resource allocation</span></div>
+                <div class="Google"><span>10 млн 300 тыс</span></div>
+                <div class="Yandex"><span>5 млн</span></div>
+                <div class="Bing"><span>146 млн</span></div>
+                <div class="Meta"><span>8 млн 10 тыс</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
 </body>

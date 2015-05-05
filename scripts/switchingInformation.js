@@ -39,8 +39,10 @@ function switchInformation(item) {
             }//switch
             break;//case 2
 
-        case 2:
-            break;//case 1
+        case 5:
+            $("#contentText").load("language/ru/ru_report.html .GlobalReport > *");
+
+            break;//case 5
 
 
     }
