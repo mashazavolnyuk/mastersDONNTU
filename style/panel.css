@@ -2,8 +2,8 @@
 #top_panel {
     background-color: #283593;
     position: absolute;
-    left: 13%;
-    width: 75%;
+    left: 10%;
+    width: 85%;
     height: 40%;
     box-shadow: 1px 15px 25px -15px #000000;
     -webkit-box-shadow: 1px 15px 25px -15px #000000;
@@ -80,9 +80,9 @@
 }
 #mainContent {
     top: 40%;
-    left: 13%;
+    left: 10%;
     position: absolute;
-    width: 75%;
+    width: 85%;
     min-height: 100%;
     z-index: 1;
     text-align: match-parent;
@@ -93,7 +93,7 @@
 #left_panel {
     background-color: #3f51b5;
     top: 40%;
-    left: 13%;
+    left: 10%;
     position: absolute;
     width: 20%;
     height: 100%;
