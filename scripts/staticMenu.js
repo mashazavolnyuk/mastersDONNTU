@@ -25,13 +25,13 @@ $(function () {
         }
     }
 
-    $(window).on('resize orientationChanged', function () {
+/*    $(window).on('resize orientationChanged', function () {
         var height = $(document).height();
         var rm = $('#left_panel');
         if (rm.length > 0) {
             rm[0].style.height = height + 'px';
         }
-    });
+    });*/
 });
 
 
