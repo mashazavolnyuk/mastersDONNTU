@@ -1,5 +1,5 @@
 
- @media  (max-width: 768px){
+ @media  all and (orientation: portrait), all and (max-width: 768px){
      #topTextPanel{
          display: inline-block;
          position: relative;
