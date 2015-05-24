@@ -1,0 +1,21 @@
+.TitleBio{
+
+    font-family: Roboto;
+    color:white;
+    font-size: 16;
+    font-weight: bold;
+}
+.TextBio{
+    right: 5%;
+    text-align: justify;
+    padding-top: 0%;
+    font-family: Roboto;
+    color:white;
+    font-size: 14;
+    padding-right: 5%;
+    text-indent: 5%;
+}
+#MainTitleBio{
+   text-align: center;
+    font-size: 18;
+}
