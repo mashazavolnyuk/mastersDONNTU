@@ -11,7 +11,7 @@ $(function () {
 
     window.onscroll = function() {
         var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-        var h=$(window).height()* 0.4;
+        var h=$(window).height()* 0.3;
         if (scrolled>h)
         {
             $('#left_panel')[0].style.top=0+'px';
