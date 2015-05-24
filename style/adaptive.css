@@ -1,5 +1,5 @@
 
- @media  (max-width: 767px){
+ @media  (max-width: 768px){
      #topTextPanel{
          display: inline-block;
          position: relative;
@@ -34,6 +34,21 @@
          display: none;
          left: 0px;
          color: #1e0f00;
+
+     }
+
+     #contentText{
+         top: 1px;
+         bottom: 2px;
+         left: 10%;
+         width: 90%;
+         height: auto;
+         position: relative;
+         padding-top: 3%;
+         overflow-y: scroll;
+         overflow: hidden;
+         background-color: #ffffff;
+         color: #000000;
 
      }
 
