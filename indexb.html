@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="style/textReport.css">
     <link rel="stylesheet" type="text/css" href="style/adaptive.css">
 
-    <script src="jQuery/jquery-1.5.1.min.js"></script>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
     <script src="scripts/language.js"></script>
     <script src="scripts/switchingInformation.js"></script>
     <script src="scripts/effect.js"></script>
@@ -28,17 +28,17 @@
     <div id="avatar"></div>
     </div>
     <div id="topTextPanel">
-        <span class="topTitleText">
+        <span class="topTitleText" id="name">
            Завольнюк Мария Андреевна
         </span>
         <br>
-         <span class="topTitleText">
+         <span class="topTitleText" id="university">
             Институт информатики и искусственного интеллекта
             Кафедра программного обеспечения интеллектуальных систем
             Специальность «Программное обеспечение систем.
          </span>
         <br>
-            <span class="topTitleText">
+            <span class="topTitleText" id="topic">
              Дослідження та підвищення ефективності алгоритмів розв'язання
              одновимірних задач розподілу ресурсів
             </span>
@@ -52,14 +52,14 @@
 </div>
 
 <div id="left_panel">
-    <div class="blockLeftPanel">
+    <div class="blockLeftPanel" onclick="switchInformation(0)">
         <div class="picterlLeftPanel" id="resume" onclick="switchInformation(0)"></div>
-        <div class="textLeftPanel" onclick="switchInformation(0)"><span class="leftText"> Резюме</span></div>
+        <div class="textLeftPanel" ><span class="leftText"> Резюме</span></div>
     </div>
 
-    <div class="blockLeftPanel">
+    <div class="blockLeftPanel" onclick="switchInformation(1)">
         <div class="picterlLeftPanel" id="bio"></div>
-        <div class="textLeftPanel" onclick="switchInformation(1)"><span class="leftText"> Автобиография</span></div>
+        <div class="textLeftPanel" ><span class="leftText"> Автобиография</span></div>
     </div>
 
     <div class="blockLeftPanel">

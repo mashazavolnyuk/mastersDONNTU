@@ -18,7 +18,7 @@ function switchInformation(item) {
                     $("#contentText").load("language/ru/ru_resume.html #Resume_russian > *");
                     break;
                 case 2:
-                   $("#contentText").load("language/en/en_resume.html #Resume_english > *");
+                    $("#contentText").load("language/en/en_resume.html #Resume_english > *");
                     break;
                 case 1:
                     break;
@@ -46,7 +46,6 @@ function switchInformation(item) {
 
 
     }
-    $('#contentText').update();
 
 }//switchInformation
 function CleanContent() {
