@@ -12,7 +12,6 @@
          color: white;
          word-wrap: break-word;
      }
-
      #top_panel{
          height: 50px;
      }
@@ -77,6 +76,27 @@ min-width: 34px;
      }
      #name{
          font-size: 20px;
+     }
+
+     .Simpletext{
+         font-family: Roboto,sans-serif;
+         color: #000000;;
+         font-size: 12vh;
+         position: relative;
+         text-align: left;
+         display: inline-block;
+         width: 80%;
+         left: 15px;
+     }
+     .SimpleTitle {
+         left: 10px;
+         font-family: Roboto,sans-serif;
+         color: #000000;
+         text-align: left;
+         font-size: 12vh;
+         position: relative;
+         display: inline-block;
+         width: 20%;
      }
 
 
