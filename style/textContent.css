@@ -1,23 +1,24 @@
 .Simpletext{
     font-family: Roboto,sans-serif;
-
     color: #000000;;
     font-size: 14;
     position: relative;
     text-align: left;
     display: inline-block;
-    width: 65%;
+    width: 80%;
+    left: 10px;
 }
 .SimpleTitle {
-    font-family: Roboto;
+    left: 10px;
+    font-size: 16;
+    font-family: Roboto,sans-serif;
     color: #000000;
     text-align: left;
     vertical-align: middle;
-
     font-size: 16;
     position: relative;
     display: inline-block;
-    width: 30%;
+    width: 20%;
 }
 #contentText{
     top: 1px;
