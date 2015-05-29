@@ -1,21 +1,24 @@
-.TitleBio{
-
+.TitleBio {
+    padding-left: 2%;
     font-family: Roboto;
-    color:white;
+    color: #000000;
     font-size: 16;
     font-weight: bold;
 }
-.TextBio{
-    right: 5%;
+
+.TextBio {
+    padding-left: 2%;
+    padding-right: 2%;
     text-align: justify;
     padding-top: 0%;
     font-family: Roboto;
-    color:white;
+    color: #000000;
     font-size: 14;
-    padding-right: 5%;
     text-indent: 5%;
+
 }
-#MainTitleBio{
-   text-align: center;
+
+#MainTitleBio {
+    text-align: center;
     font-size: 18;
 }

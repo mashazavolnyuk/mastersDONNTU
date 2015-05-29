@@ -6,6 +6,6 @@ $(document).ready(function(){
 
         infiniteLoop: false,
         hideControlOnEnd: true,
-        mode: 'vertical'
+        mode: 'horizontal'
     });
 });
