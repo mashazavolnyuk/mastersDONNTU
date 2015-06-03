@@ -37,6 +37,17 @@ function switchInformation(item) {
                 case 1:
                     break;
             }//switch
+            break;//case 1
+
+        case 2:
+            switch (currentLanguage) {
+                case 0:
+                    $("#contentText").load("language/ru/ru_abstract.html #abstract > *");
+                    break;
+                case 2:
+                    $("#contentText").load("language/en/en_resume.html #Resume_english > *");
+                    break;
+            }//switch
             break;//case 2
 
         case 5:

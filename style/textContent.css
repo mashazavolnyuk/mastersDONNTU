@@ -40,3 +40,14 @@
     color: #000000;
 
 }
+.textAbstract{
+    left: 3%;
+    font-family: Roboto,sans-serif;
+    color: #000000;
+    text-align: justify;
+    font-size: 16px;
+    position: relative;
+    display: block;
+    width: 90%;
+
+}

@@ -22,3 +22,20 @@
     text-align: center;
     font-size: 18;
 }
+.referenceAbstract{
+    list-style-type: none;
+}
+.textAbstract{
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: justify;
+    padding-top: 0%;
+    font-family: Roboto;
+    color: #000000;
+    font-size: 14;
+    text-indent: 5%;
+}
+.imgCenter{
+    text-align: center;
+
+}
