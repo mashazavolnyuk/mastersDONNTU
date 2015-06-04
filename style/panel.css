@@ -100,7 +100,7 @@ body{
     font-family: Roboto;
 }
 
-#left_panel {
+.left_panel {
     background-color: #ffffff;
     top: 30%;
     position: fixed;

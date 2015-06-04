@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/textBio.css">
+
+    <title></title>
+</head>
+<body>
+<div id="en-abstract">
+<p class="TitleBio">Abstract</p>
+<ol class="referenceAbstract">
+    <li>Aim and research tasks</li>
+    <li>Relevance of the topic</li>
+    <li>Supposed scientific novelty</li>
+    <li><a href="#titleOne">CLASSIFICATION resource allocation problem (ZLP)</a></li>
+    <li><a href="#partOneOne">1.1 General concepts of resource allocation and classification of problems </a></li>
+    <li><a href="#partOneTwo">1.2 The mathematical model of the problem of resource allocation</a></li>
+    <li><a href="#titleTwo">2 METHODS OF DECISION-dimensional problems</a></li>
+    <li><a href="#partTwoOne">2.1 Graphical method</a></li>
+    <li>2.2 Simplex method</li>
+    <li>2.3 Brute force</li>
+    <li>2.4 Genetic Algorithm</li>
+    <li>3 Evaluation of the complexity of algorithms</li>
+    <li>4 REVIEW OF THE PROGRAMME FOR ACTION ZLP</li>
+
+</ol>
+
+
+<p class="TitleBio" id="titleOne">CLASSIFICATION resource allocation problem (ZLP)</p>
+
+<p class="TitleBio" id="partOneOne">1.1 General concepts of resource allocation and classification of problems  </p>
+
+<p class="textAbstract">Resource allocation problems - the problem of efficient use of limited resources
+         or such use that best promotes a particular purpose.
+    The objectives of this class occur when the available resources are not sufficient to perform each job
+         the most effective way. In practice, very often multi-stage operations related to the reasonable
+         the distribution of those or other resources. It is about the allocation of funds, materials, labor force
+         businesses industries or individual stages of work, the distribution of ammunition for the purposes of the total weight G,
+         allotted to a technical device in his separate units, and so on. d. - generally about distribution all possible means
+         for some categories of events.</p>
+
+<p class="textAbstract">Theoretically, distribution tasks can be divided into the following groups:</p>
+
+<p class="textAbstract"> 1. Define the resources and work. Required to allocate resources between the works in such a
+    way as to maximize the effectiveness of a particular criterion (eg profit)
+    or minimize the costs (production costs). Example. Known production targets and production capacity.
+    When there are different ways of manufacturing products (such as processing on different machines) limit
+         capacity does not allow for each product to use the best technology.
+    What methods of production need to select to perform tasks with minimal cost?</p>
+
+<p class="textAbstract"> 2. Set only work.Required to pick up those resources that enable
+         perform them with minimal production costs. Example. Known monthly timetable
+         passenger aircraft for airlines. How many crews needed
+         to perform the transportation plan with minimal operating costs.</p>
+
+<p class="textAbstract"> 3. Set the only resources available. It is required to determine what work can be done with
+         these resources to provide maximum efficiency. Example. Set by the company with certain
+         production, material and labor resources. Select a range of manufactured products,
+         which will ensure maximum profit.
+    Most often in practice there are problems of the first type. Resource allocation problems are problems of line
+         programming.</p>
+
+<p class="TitleBio" id="partOneTwo">1.2 The mathematical model of the problem of resource allocation</p>
+
+<p class="textAbstract">Linear programming - mathematical discipline,
+         dedicated to the theory and methods for solving extremal problems on sets of N-dimensional vector space,
+         defined systems of linear equations and inequalities. </p>
+
+<p class="textAbstract">To construct a mathematical model of linear programming problems must perform
+         next steps:</p>
+
+<p class="textAbstract">1. Identify the variables of the problem.</p>
+
+<p class="textAbstract">2. Create constraints to be satisfied by the unknown variables.</p>
+
+<p class="textAbstract">3. Be objective function.</p>
+
+<p class="textAbstract">Linear programming problem (ZLP), which is formulated in general terms as:</p>
+
+<div class="imgCenter"><img src="image/formula.png" class="imageAbstract"></div>
+<p class="textAbstract">with restrictions:</p>
+
+<div class="imgCenter"><img src="image/formula2.png" class="imageAbstract"></div>
+<p class="textAbstract">where</p>
+
+<p class="textAbstract">aij – the coefficients of the variables;</p>
+
+<p class="textAbstract">bj – limitations in terms of resources.</p>
+
+<p class="textAbstract">The objective function of the optimization problem is reduced
+         a linear function of n variables x1, x2, .. n.</p>
+
+<p class="textAbstract">The system of restrictions in expanded form is written as:</p>
+
+<div class="imgCenter"><img src="image/formula3.png" class="imageAbstract"></div>
+
+<p class="TitleBio" id="titleTwo">METHODS OF DECISION-dimensional problems</p>
+
+<p class="TitleBio" id="partTwoOne">Graphical method</p>
+
+<p class="textAbstract">Graphic method for solving linear programming problems based on geometrical
+         interpretation
+         linear programming problem, and it is used mainly for solving the two-dimensional space and
+         Only some of the problems of three-dimensional space, as rather difficult to construct a polyhedron solutions
+         which is formed by the intersection of half-spaces.The problem space of dimension greater than three
+         picture
+         graphically impossible</p>
+
+<p class="textAbstract">Let a linear programming problem is given in a two-dimensional space, there are restrictions
+        It contains two variables.
+         Find the minimum value of the function Z = c1x1 + c2x2 under the constraints of the form:</p>
+<div class="imgCenter"><img src="image/grafMetod.png" class="imageAbstract"></div>
+<p class="textAbstract"> Assume that the system is sharing. Each of the inequalities of the system and determines
+         half-plane with boundary lines:
+    a<sub>i1</sub>x<sub>1</sub>+a<sub>i2</sub>x<sub>2</sub>=b<sub>i</sub>,(i=1,2..n);x<sub>1</sub>=0;x<sub>2</sub>=0
+    Linear function with fixed values is a straight line equation:c<sub>1</sub>x<sub>1</sub>+
+    c<sub>2</sub>x<sub>2</sub>=const; </p>
+
+<p class="textAbstract">We construct a polygon solutions of linear constraints and schedule functions at Z = 0.
+
+<p class="textAbstract"> Then the task of linear programming can give the following
+         interpretation:</p>
+
+<p class="textAbstract">Find polygon point solutions which direct c<sub>1</sub>x<sub>1</sub>+
+    c<sub>2</sub>x<sub>2</sub>=const; Z reference function thus reaches a minimum.</p>
+
+<p class="textAbstract">Value c<sub>1</sub>x<sub>1</sub>+
+    c<sub>2</sub>x<sub>2</sub>=Z decrease in the direction of the vector N=(-c<sub>1</sub>,-c<sub>2</sub>),
+    so straight Z = 0 we move parallel to itself in the direction of N.</p>
+
+<p class="textAbstract">If a polygon making limited (Figure 2.1)
+         the straight line becomes twice the reference with respect to the polygon solutions (points B and E),
+         Moreover, the minimum value takes at E. The coordinates of the point is, solving the system of equations of lines and DE</p>
+<div class="imgCenter"><img src="image/grafMetod2.png" class="imageAbstract"></div>
+<p class="textAbstract">Figure 2.1 - Example of graphical solution of linear programming problem 6
+         conditions.</p>
+
+<p class="TitleBio" id="partTwoTwo">Simplex method </p>
+
+<p class="textAbstract">The simplex method is a basic linear programming.
+         Solution of the problem begins with a look at one of the vertices of conditions.
+    If the test does not match the peak of the maximum (minimum), then go to a nearby,
+         increasing the value of the objective function for solving the problem on the maximum and reducing the solution of the problem to a minimum.
+    Thus, the transition from one node to another to improve the objective function. Since the number of vertices
+         polyhedron is limited,
+         the finite number of steps guaranteed to find the optimal value, or the establishment of the fact,
+         that the problem is unsolvable.</p>
+
+<p class="textAbstract">Calculations of the simplex method are organized as simplex tables
+         which is shorthand linear programming problem in canonical form.
+         Before drawing up the simplex table task must be transformed, reduced to a system of constraints
+         allowable baseline mean, c by which the function of the target should be excluded basic variables.</p>
+
+<p class="textAbstract">To compile simplex tables in all equations in the problem members,
+         comprising the variables are transferred to the left side, the right free retained,
+         ie problem is written as a system of equations (Figure 2.2).</p>
+
+<div class="imgCenter"><img src="image/simplMetod.png" class="imageAbstract"></div>
+<p class="textAbstract"> Further, this system takes the form of the simplex table (Figure 2.3).</p>
+
+<div class="imgCenter"><img src="image/simplTable.png" class="imageAbstract"></div>
+<p class="textAbstract">Exhaustive search (or "brute force") - a method of solving the problem by trying all
+         options.</p>
+
+<p class="textAbstract">Genetic algorithms have been proposed by John Henry Holland in 1970 and belong to the so-
+         metaalgoritmam called.
+         The idea - Preparation of search algorithms based on biological models of the mechanisms of natural selection.
+         The basic concepts are: population, selection, mutation, crossover.</p>
+
+<p class="textAbstract">Population. It comprises a set of binary strings (chromosomes), possible solutions.
+         On the basis of the first ("old") populations build a second ("new") population of solutions,
+         which serves as the "old" for a third of the population, etc.</p>
+
+<p class="textAbstract">Tackling. Sets the selection function, according to which the best representatives of the "old" population
+         selected for the reproduction of the "new."
+         Therefore, the algorithm selects the best solution.</p>
+
+<p class="textAbstract">Crossbreeding. For a pair of rows ("parents") with a certain length r is chosen arbitrary number
+         1 <= s <= r.
+         "Parents" exchanged between the bits with s + 1 to r-th and obtained two new lines ("offspring")</p>
+
+<p class="textAbstract">
+    Mutation. The changes taking place with a certain probability.</p>
+
+<p class="textAbstract"> The picture shows all the steps of the algorithm:</p>
+
+<p class="textAbstract">1. Create random population of binary chromosomes.</p>
+
+<p class="textAbstract"> 2. Evaluation of each number.</p>
+
+<p class="textAbstract">3. Selection on the basis of the numbers.</p>
+
+<p class="textAbstract">4. Hybridization obtained in the third step of the chromosomes.</p>
+
+<p class="textAbstract">5. The mutation.</p>
+
+<p class="textAbstract"> 6. Go to the second step.</p>
+
+<p class="textAbstract">7. The algorithm is interrupted after a predetermined number of iterations.</p>
+
+<div class="imgCenter"><img src="image/genAlg.png" class="imageAbstract"></div>
+
+<p class="TitleBio" id="titleThree">3 Evaluation of the complexity of algorithms</p>
+
+<p class="textAbstract">Algorithm - a program that is a very calculating,
+         often with no other items of computer - network problems or the user input and output.
+         An analysis of the complexity of lets you know how fast the program when it makes the calculations.</p>
+
+<p class="textAbstract">O () - "stripped-down" time evaluation algorithm, which is often much easier to obtain,
+         what the exact formula for the number of operations.</p>
+
+<p class="textAbstract">The following rules for the evaluation of O ():</p>
+
+<p class="textAbstract">- In the evaluation of the function is taken over the number of operations that grows most rapidly;</p>
+
+<p class="textAbstract">- In the evaluation of O () constants are not taken into account.</p>
+
+<p class="textAbstract">The complexity of the table of the simplex method is mainly determined by the number of operands
+         in the simplex table and is O (n).
+         Graphical method as well as the method sipleks simple in terms of implementation and has an identical difficulty.</p>
+
+<p class="textAbstract">The complexity of the table of the simplex method is mainly determined by the number of operands
+         in the simplex table and is O (n).
+         Graphical method as well as the method sipleks simple in terms of implementation and has an identical difficulty.</p>
+
+<p class="TitleBio" id="titleFour">
+    REVIEW OF THE PROGRAMME FOR ACTION ZLP</p>
+
+<p class="textAbstract">At the moment, there are many software packages,
+         implementing certain methods and algorithms for solving optimization problems. We mention some of them.</p>
+
+<p class="textAbstract">Microsoft Excel (also sometimes called Microsoft Office Excel) -
+         program to work with spreadsheets,
+         establish a corporation
+         Microsoft for the Microsoft Windows, Windows NT, and Mac OS.</p>
+
+<p class="textAbstract">MATLAB - software package for solving technical computing
+         and the eponymous language
+         programming
+         used in this package. </p>
+<p class="textAbstract">Mathcad - computer algebra system from the class of computer-aided design,
+         focused on preparing interactive documents with calculations and visual accompaniment,
+         characterized by ease of use and
+         application collaboration.</p>
+<p class="textAbstract">LPSolve - a free package for solving linear programming problems.
+     Resolves an LP problem with the amount of variables and constraints to 30,000 to 50,000 is written in C ++.
+     Package using the simplex method.
+     Link Access: http://lpsolve.sourceforge.net</p>
+<p class="TitleBio" id="conclusion">CONCLUSIONS</p>
+<p class="textAbstract">Problems of resource allocation - the problem effek¬tivnogo use of scarce resources or
+         such use, the maximum koto¬roe promotes a particular purpose. The objective function is reduced
+         the optimization problem is a linear function of n variables x1, x2, .. n.</p>
+<p class="textAbstract">The solution is a minimization (maximization of the function). To solve the problem, there are a number of methods.
+         The paper discusses the following methods: graphic, simplex method, an exhaustive search,
+         genetic algorithm.</p>
+<p class="textAbstract">Currently, there are a number of softwares
+         in which there is implemented an algorithm for solving ZLP.</p>
+<p class="TitleBio" id="listReference">REFERENCES</p>
+<p class="textAbstract">1.	Томас Х. Кормен, Чарльз И. Лейзерсон, Рональд Л. Ривест, Клиффорд Штайн. Алгоритмы: построение и анализ = Introduction to Algorithms. — 2-ое. — М.:«Вильямс», 2006. — С. 456-458. — ISBN 0-07-013151-1.</p>
+<p class="textAbstract">2.	Ананий В. Левитин. Алгоритмы: введение в разработку и анализ = Introduction to The Design and Analysis of Algorithms. — М.: «Вильямс», 2006. — С. 160-163. —ISBN 0-201-74395-7.</p>
+<p class="textAbstract">3.	Гладков Л. А., Курейчик В. В., Курейчик В. М. Генетические алгоритмы: Учебное пособие. — 2-е изд. — М: Физматлит, 2006. — С. 320. — ISBN 5-9221-0510-8.</p>
+<p class="textAbstract">4.	Задача о рюкзаке [Электронный ресурс]: Алгоритм решения задачи о рюкзаке Режим доступа: http://habrahabr.ru/post/222577/</p>
+<p class="textAbstract">5.	Решение задач по математике [Электронный ресурс]: Задача распределения ресурсов Режим доступа: http://matpom.narod.ru/prim/resursi.pdf</p>
+<p class="TitleBio" id="admonition">Remark</p>
+<p class="textAbstract">In writing this essay master's work is not yet complete.
+         Final completion: December 2014. The full text of work and materials on the topic can be obtained
+         the author or his head after that date.</p>
+</div>
+</body>
+</html>
