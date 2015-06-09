@@ -50,8 +50,8 @@
     </div>
 
 </div>
-
-<div class="left_panel">
+<!--Rusian panel-->
+<div class="left_panel" id="ru_left_panel">
     <div class="blockLeftPanel" onclick="switchInformation(0)">
         <div class="picterlLeftPanel" id="resume" onclick="switchInformation(0)"></div>
         <div class="textLeftPanel" ><span class="leftText"> Резюме</span></div>
@@ -67,28 +67,57 @@
         <div class="textLeftPanel"><span class="leftText"> Реферет</span></div>
     </div>
 
-    <div class="blockLeftPanel">
-        <div class="picterlLeftPanel" id="library" onclick="switchInformation(3)"></div>
+    <div class="blockLeftPanel" onclick="switchInformation(3)">
+        <div class="picterlLeftPanel" id="library"></div>
         <div class="textLeftPanel"><span class="leftText"> Библиотека</span></div>
     </div>
 
-    <div class="blockLeftPanel">
-        <div class="picterlLeftPanel" id="links" onclick="switchInformation(4)"></div>
+    <div class="blockLeftPanel"onclick="switchInformation(4)">
+        <div class="picterlLeftPanel" id="links" ></div>
         <div class="textLeftPanel"><span class="leftText"> Ссылки</span></div>
     </div>
 
-    <div class="blockLeftPanel">
-        <div class="picterlLeftPanel" id="report" onclick="switchInformation(5)"></div>
+    <div class="blockLeftPanel"onclick="switchInformation(5)">
+        <div class="picterlLeftPanel" id="report" ></div>
         <div class="textLeftPanel"><span class="leftText" onclick="switchInformation(5)"> Отчет о поиске</span></div>
     </div>
-    <div class="blockLeftPanel">
-        <a href="Marvel.html"><div class="picterlLeftPanel" id="privateTitle" onclick="switchInformation(6)"></div></a>
+    <div class="blockLeftPanel"onclick="switchInformation(6)">
+        <a href="Marvel.html"><div class="picterlLeftPanel" id="privateTitle" ></div></a>
         <div class="textLeftPanel"><span class="leftText"><a href="Marvel.html">Индивидуалный раздел</a></span></div>
     </div>
 </div>
+<!--English panel-->
+<div class="left_panel" id="en_left_panel">
+    <div class="blockLeftPanel" onclick="switchInformation(0)">
+        <div class="picterlLeftPanel" id="en_resume" onclick="switchInformation(0)"></div>
+        <div class="textLeftPanel" ><span class="leftText"> Resume</span></div>
+    </div>
+    <div class="blockLeftPanel" onclick="switchInformation(2)">
+        <div class="picterlLeftPanel" ></div>
+        <div class="textLeftPanel"><span class="leftText"> Abstract</span></div>
+    </div>
+ </div>
+<!--Ukrain panel-->
+<div class="left_panel" id="uk_left_panel">
+    <div class="blockLeftPanel" onclick="switchInformation(0)">
+        <div class="picterlLeftPanel" id="uk_resume" onclick="switchInformation(0)"></div>
+        <div class="textLeftPanel" ><span class="leftText"> Резюме</span></div>
+    </div>
+    <div class="blockLeftPanel" onclick="switchInformation(1)">
+        <div class="picterlLeftPanel"></div>
+        <div class="textLeftPanel" ><span class="leftText"><span></span>Автобiографiя</span></div>
+    </div>
+    <div class="blockLeftPanel" onclick="switchInformation(2)">
+        <div class="picterlLeftPanel" ></div>
+        <div class="textLeftPanel"><span class="leftText"> Реферат</span></div>
+    </div>
+</div>
+
+
 <div id="mainContent">
     <div id="contentText"></div>
 </div>
 
 </body>
 </html>
+
