@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/panel.css">
+    <link rel="stylesheet" type="text/css" href="css/perosnalFont.css">
+    <link rel="stylesheet" type="text/css" href="css/textContent.css">
+    <link rel="stylesheet" type="text/css" href="css/textBio.css">
+    <link rel="stylesheet" type="text/css" href="css/textReport.css">
+    <link rel="stylesheet" type="text/css" href="css/adaptive.css">
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/switchingInformation.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/staticMenu.js"></script>
+
+
+</head>
+
+
+<body onload="load_default()">
+<div id="top_panel">
+    <div class="topPicter">
+        <div id="avatar"></div>
+    </div>
+    <div id="topTextPanel">
+    </div>
+    <div class="panelLanguage">
+        <div class="language" id="ru" onclick="setCurrentLanguage(0)"></div>
+        <div class="language" id="uk" onclick="setCurrentLanguage(1)"></div>
+        <div class="language" id="en" onclick="setCurrentLanguage(2)"></div>
+    </div>
+</div>
+
+<!--Rusian panel-->
+<div id="ru_panel">
+    <div class="left_panel" id="ru_left_panel">
+        <div class="blockLeftPanel" onclick="switchInformation(0)">
+            <div class="picterlLeftPanel" id="resume" onclick="switchInformation(0)"></div>
+            <div class="textLeftPanel"><span class="leftText">Резюме</span></div>
+        </div>
+
+        <div class="blockLeftPanel" onclick="switchInformation(1)">
+            <div class="picterlLeftPanel" id="bio"></div>
+            <div class="textLeftPanel"><span class="leftText"> Автобиография</span></div>
+        </div>
+
+        <div class="blockLeftPanel" onclick="switchInformation(2)">
+            <div class="picterlLeftPanel" id="diploma"></div>
+            <div class="textLeftPanel"><span class="leftText"> Реферет</span></div>
+        </div>
+
+        <div class="blockLeftPanel" onclick="switchInformation(3)">
+            <div class="picterlLeftPanel" id="library"></div>
+            <div class="textLeftPanel"><span class="leftText"> Библиотека</span></div>
+        </div>
+
+        <div class="blockLeftPanel" onclick="switchInformation(4)">
+            <div class="picterlLeftPanel" id="links"></div>
+            <div class="textLeftPanel"><span class="leftText"> Ссылки</span></div>
+        </div>
+
+        <div class="blockLeftPanel" onclick="switchInformation(5)">
+            <div class="picterlLeftPanel" id="report"></div>
+            <div class="textLeftPanel"><span class="leftText" onclick="switchInformation(5)"> Отчет о поиске</span>
+            </div>
+        </div>
+        <div class="blockLeftPanel" onclick="switchInformation(6)">
+            <a href="ind/index.html">
+                <div class="picterlLeftPanel" id="privateTitle"></div>
+            </a>
+
+            <div class="textLeftPanel"><span class="leftText"><a href="ind/index.html">Индивидуалный раздел</a></span>
+            </div>
+        </div>
+    </div>
+    <div id="mainContent">
+        <div id="contentText"></div>
+    </div>
+    </div>
+
+<!--en panel-->
+<div class="left_panel" id="en_left_panel">
+    <div class="blockLeftPanel" onclick="switchInformation(0)">
+        <div class="picterlLeftPanel" onclick="switchInformation(0)"></div>
+        <div class="textLeftPanel"><span class="leftText"> Resume</span></div>
+    </div>
+    <div class="blockLeftPanel" onclick="switchInformation(2)">
+        <div class="picterlLeftPanel"></div>
+        <div class="textLeftPanel"><span class="leftText"> Abstract</span></div>
+    </div>
+</div>
+
+<!--UK panel-->
+    <div class="left_panel" id="uk_left_panel">
+        <div class="blockLeftPanel" onclick="switchInformation(0)">
+            <div class="picterlLeftPanel" id="uk_resume" onclick="switchInformation(0)"></div>
+            <div class="textLeftPanel"><span class="leftText"> Резюме</span></div>
+        </div>
+        <div class="blockLeftPanel" onclick="switchInformation(1)">
+            <div class="picterlLeftPanel"></div>
+            <div class="textLeftPanel"><span class="leftText"><span></span>Автобiографiя</span></div>
+        </div>
+        <div class="blockLeftPanel" onclick="switchInformation(2)">
+            <div class="picterlLeftPanel"></div>
+            <div class="textLeftPanel"><span class="leftText"> Реферат</span></div>
+        </div>
+    </div>
+</body>
+</html>
+

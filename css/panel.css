@@ -164,29 +164,29 @@ body{
 }
 
 #resume {
-    background-image: url("../icon_personalPanelLeft/icon_resume.png");
+    background-image: url("../img/icon_resume.png");
 }
 
 #bio {
-    background-image: url("../icon_personalPanelLeft/icon_bio.png");
+    background-image: url("../img/icon_bio.png");
 }
 
 #diploma {
 
-    background-image: url("../icon_personalPanelLeft/icon_diploma.png");
+    background-image: url("../img/icon_diploma.png");
 }
 #library{
-    background-image: url("../icon_personalPanelLeft/icon_book.png");
+    background-image: url("../img/icon_book.png");
 
 }
 #links{
-    background-image: url("../icon_personalPanelLeft/icon_links.png");
+    background-image: url("../img/icon_links.png");
 }
 #report{
-    background-image: url("../icon_personalPanelLeft/icon_report.png");
+    background-image: url("../img/icon_report.png");
 }
 #privateTitle{
-    background-image: url("../icon_personalPanelLeft/icon_star.png");
+    background-image: url("../img/icon_star.png");
 }
 #en_left_panel{
 display: none;

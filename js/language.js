@@ -3,6 +3,6 @@
  */
 
 function load_default(){
-     $("#contentText").load("language/ru/ru_resume.html #Resume_russian > *");
+     $("#contentText").load("language/ru/index.html #Resume_russian > *");
      setCurrentLanguage(0);
 }

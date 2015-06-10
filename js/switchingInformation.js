@@ -14,15 +14,15 @@ function switchInformation(item) {
         case 0:
             switch (currentLanguage) {
                 case 0:
-                    $("#contentText").load("language/ru/ru_resume.html #Resume_russian > *");
+                    $("#contentText").load("res_ru/index.html #Resume_russian > *");
                     setTopText(0);
                     break;
                 case 2:
-                    $("#contentText").load("language/en/en_resume.html #Resume_english > *");
+                    $("#contentText").load("indexe.html #Resume_english > *");
                     setTopText(2);
                     break;
                 case 1:
-                    $("#contentText").load("language/uk/uk_resume.html #Resume_uk> *");
+                    $("#contentText").load("indexu.html #Resume_uk> *");
                     setTopText(1);
                     break;
             }//switch
@@ -78,13 +78,13 @@ function CleanContent() {
 function setTopText(numerLanguge) {
     switch (numerLanguge) {
         case 0:
-            $("#topTextPanel").load("language/ru/ru_topInformation.html #top_russian> *");
+            $("#topTextPanel").load("topInf/index.html #top_russian> *");
             break;
         case 1:
-            $("#topTextPanel").load("language/uk/uk_topInformation.html #top_ukrain> *");
+            $("#topTextPanel").load("topInf/indexu.html #top_ukrain> *");
             break;
         case 2:
-            $("#topTextPanel").load("language/en/en_topInformation.html #top_english> *");
+            $("#topTextPanel").load("topInf/indexe.html #top_english> *");
             break;
     }
 }
@@ -97,7 +97,7 @@ function setCurrentLanguage(numerLanguge) {
             $("#en_left_panel").css('display', 'none');
             $('#ru_left_panel').css('display', 'block');
             $('#uk_left_panel').css('display', 'none');
-            $("#contentText").load("language/ru/ru_resume.html #Resume_russian > *");
+            $("#contentText").load("res_ru/index.html #Resume_russian > *");
             setTopText(0);
             break;
         case 1:
@@ -105,9 +105,9 @@ function setCurrentLanguage(numerLanguge) {
             $("#en_left_panel").css('display', 'none');
             $('#ru_left_panel').css('display', 'none');
             $('#uk_left_panel').css('display', 'block');
-            $("#contentText").load("language/uk/uk_resume.html #Resume_uk> *");
+            $("#contentText").load("indexu.html #Resume_uk> *");
             setTopText(1);
-            ;
+
             break;
         case 2:
         {
@@ -115,7 +115,7 @@ function setCurrentLanguage(numerLanguge) {
             $("#en_left_panel").show();
             $('#ru_left_panel').css('display', 'none');
             $('#uk_left_panel').css('display', 'none');
-            $("#contentText").load("language/en/en_resume.html #Resume_english > *");
+            $("#contentText").load("indexe.html #Resume_english > *");
             setTopText(2);
             break;
         }
