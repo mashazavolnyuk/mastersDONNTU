@@ -77,16 +77,16 @@ body{
 
 }
 #ru {
-    background-image: url("../iconTop/ru_flag.png");
+    background-image: url("../image/ru_flag.png");
 }
 
 #uk {
-    background-image: url("../iconTop/uk_flag.png");
+    background-image: url("../image/uk_flag.png");
 }
 
 #en {
 
-    background-image: url("../iconTop/en_flag.png");
+    background-image: url("../image/en_flag.png");
 }
 #mainContent {
     top: 30%;

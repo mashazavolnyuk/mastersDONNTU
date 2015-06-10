@@ -25,17 +25,13 @@ function switchInformation(item) {
                     break;
             }//switch
             break;//case 0
-
         case 1:
             switch (currentLanguage) {
                 case 0:
                     $("#contentText").load("language/ru/ru_bio.html #AboutMyself > *");
-
-                    break;
-                case 2:
-                    $("#contentText").load("language/en/en_resume.html #Resume_english > *");
                     break;
                 case 1:
+                    $("#contentText").load("language/uk/uk_bio.html #AboutMyself > *");
                     break;
             }//switch
             break;//case 1
@@ -44,6 +40,9 @@ function switchInformation(item) {
             switch (currentLanguage) {
                 case 0:
                     $("#contentText").load("language/ru/ru_abstract.html #abstract > *");
+                    break;
+                case 1:
+                    $("#contentText").load("language/uk/uk_abstract.html #abstract > *");
                     break;
                 case 2:
                     $("#contentText").load("language/en/en_adstract.html #en-abstract > *");
@@ -62,6 +61,7 @@ function switchInformation(item) {
             break;//case 5
     }
 }//switchInformation
+
 function CleanContent() {
 
     $('#contentText').empty();
