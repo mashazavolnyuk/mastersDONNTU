@@ -22,8 +22,8 @@
     var div = document.createElement('div'),
         ref = document.getElementsByTagName('base')[0] || document.getElementsByTagName('script')[0];
 
-    div.className = 'fit-vids-style';
-    div.innerHTML = '&shy;<style>         \
+    div.className = 'fit-vids-css';
+    div.innerHTML = '&shy;<css>         \
       .fluid-width-video-wrapper {        \
          width: 100%;                     \
          position: relative;              \
@@ -39,7 +39,7 @@
          width: 100%;                     \
          height: 100%;                    \
       }                                   \
-    </style>';
+    </css>';
 
     ref.parentNode.insertBefore(div,ref);
 

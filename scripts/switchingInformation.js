@@ -30,11 +30,11 @@ function switchInformation(item) {
         case 1:
             switch (currentLanguage) {
                 case 0:
-                    $("#contentText").load("language/ru/ru_bio.html #AboutMyself > *");
+                    $("#contentText").load("bio/index.html #AboutMyself > *");
                     setTopText(0);
                     break;
                 case 1:
-                    $("#contentText").load("language/uk/uk_bio.html #AboutMyself > *");
+                    $("#contentText").load("bio/indexu.html #AboutMyself > *");
                     setTopText(1);
                     break;
             }//switch
@@ -43,29 +43,29 @@ function switchInformation(item) {
         case 2:
             switch (currentLanguage) {
                 case 0:
-                    $("#contentText").load("language/ru/ru_abstract.html #abstract > *");
+                    $("#contentText").load("diss/index.html #abstract > *");
                     setTopText(0);
                     break;
                 case 1:
-                    $("#contentText").load("language/uk/uk_abstract.html #abstract > *");
+                    $("#contentText").load("diss/indexu.html #abstract > *");
                     setTopText(1);
                     break;
                 case 2:
-                    $("#contentText").load("language/en/en_adstract.html #en-abstract > *");
+                    $("#contentText").load("diss/indexe.html #en-abstract > *");
                     setTopText(2);
                     break;
             }//switch
             break;//case 2
         case 3:
-            $("#contentText").load("language/ru/ru_library.html #library > *");
+            $("#contentText").load("library/index.html #library > *");
             setTopText(0);
             break;
         case 4:
-            $("#contentText").load("language/ru/ru_reference.html #refer > *");
+            $("#contentText").load("links/index.html #refer > *");
             setTopText(0);
             break;
         case 5:
-            $("#contentText").load("language/ru/ru_report.html .GlobalReport > *");
+            $("#contentText").load("report/index.html .GlobalReport > *");
             setTopText(0);
             break;//case 5
     }

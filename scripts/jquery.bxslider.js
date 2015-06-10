@@ -173,7 +173,7 @@
 			}());
 			// if vertical mode always make maxSlides and minSlides equal
 			if(slider.settings.mode === 'vertical'){ slider.settings.maxSlides = slider.settings.minSlides; }
-			// save original style data
+			// save original css data
 			el.data("origStyle", el.attr("style"));
 			el.children(slider.settings.slideSelector).each(function(){
 			  $(this).data("origStyle", $(this).attr("style"));
@@ -705,12 +705,12 @@
 		};
 
 		/**
-		 * Appends image captions to the DOM
+		 * Appends img captions to the DOM
 		 */
 		var appendCaptions = function(){
 			// cycle through each child
 			slider.children.each(function(index){
-				// get the image title attribute
+				// get the img title attribute
 				var title = $(this).find('img:first').attr('title');
 				// append the caption
 				if(title !== undefined && ('' + title).length){
@@ -995,7 +995,7 @@
 		};
 
 		/**
-		 * Runs a continuous loop, news ticker-style
+		 * Runs a continuous loop, news ticker-css
 		 */
 		var tickerLoop = function(resumeSpeed){
 			speed = resumeSpeed ? resumeSpeed : slider.settings.speed;

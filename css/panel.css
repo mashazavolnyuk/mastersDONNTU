@@ -20,7 +20,7 @@ body{
     display: inline-block;
 }
 #avatar {
-    background-image: url("../image/avatar.png");
+    background-image: url("../img/avatar.png");
     background-repeat: no-repeat;
     display: inline-block;
     background-size: contain;
@@ -77,16 +77,16 @@ body{
 
 }
 #ru {
-    background-image: url("../image/ru_flag.png");
+    background-image: url("../img/ru_flag.png");
 }
 
 #uk {
-    background-image: url("../image/uk_flag.png");
+    background-image: url("../img/uk_flag.png");
 }
 
 #en {
 
-    background-image: url("../image/en_flag.png");
+    background-image: url("../img/en_flag.png");
 }
 #mainContent {
     top: 30%;
