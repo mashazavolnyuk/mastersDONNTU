@@ -38,6 +38,7 @@
 }
 .TitleExp{
     color: #000000;
+    padding-left: 2px;
 
 }
 .textAbstract{
@@ -49,5 +50,22 @@
     position: relative;
     display: block;
     width: 90%;
+}
+
+.textTop{
+    left: 3%;
+    font-family: Roboto,sans-serif;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    position: relative;
+    display: block;
+    width: 90%;
+    padding-top: 0%;
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+#FIO,#theme{
+    font-size: 18px;
 
 }
