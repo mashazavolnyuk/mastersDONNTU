@@ -12,20 +12,28 @@
 <ol class="referenceAbstract">
     <li>Цель и задачи</li>
     <li>Актуальность темы</li>
-    <li>Предполагаемая научная новизна</li>
     <li><a href="#titleOne">КЛАССИФИКАЦИЯ ЗАДАЧ РАСПРЕДЕЛЕНИЯ РЕСУРСОВ(ЗЛП)</a></li>
     <li><a href="#partOneOne">1.1 Общие понятия о распределении ресурсов и классификация задач </a></li>
     <li><a href="#partOneTwo">1.2 Математическая модель задачи распределения ресурсов</a></li>
     <li><a href="#titleTwo">2 МЕТОДЫ РЕШЕНИЯ ОДНОМЕРНЫХ ЗАДАЧ</a></li>
     <li><a href="#partTwoOne">2.1 Графический метод</a></li>
-    <li>2.2 Симплекс-метод</li>
-    <li>2.3 Полный перебор</li>
-    <li>2.4 Генетический алгоритм</li>
-    <li>3 ОЦЕНКА СЛОЖНОСТИ АЛГОРИТМА</li>
-    <li>4 ОБЗОР ПРОГРАММЫ ДЛЯ РЕШЕНИЯ ЗЛП
-    <li>
+    <li><a href="#partTwoTwo">2.2 Симплекс-метод</a></li>
+    <li><a href="#partTwoThree">2.3 Полный перебор</a></li>
+    <li><a href="#partTwoFour">2.4 Генетический алгоритм</a></li>
+    <li><a href="#titleThree">3 ОЦЕНКА СЛОЖНОСТИ АЛГОРИТМА</a></li>
+    <li><a href="#titleFour">4 ОБЗОР ПРОГРАММЫ ДЛЯ РЕШЕНИЯ ЗЛП</a></li>
+    <li><a href="#conclusion">ВЫВОДЫ</a></li>
 </ol>
+<p class="TitleBio" id="goals">Цель и задачи</p>
+<p class="textAbstract">Целью данной работы является исследование и оценка эффективности алгоритма решение одномерных задач распределения ресурсов.
+    Для достижения поставленной цели необходимо выполнить следующие задачи:обзор существующих алгоритмов,методов
+    их решения и дать оценку по вычислительной сложности</p>
 
+<p class="TitleBio" id="actual">Актуальность темы</p>
+
+<p class="textAbstract">Актуальность темы заключается в необходимость обоснования научных
+    подходов к определению оптимальности распределения
+    ресурсов по объему потребностей.</p>
 
 <p class="TitleBio" id="titleOne">КЛАССИФИКАЦИЯ ЗАДАЧ РАСПРЕДЕЛЕНИЯ РЕСУРСОВ(ЗЛП)</p>
 
@@ -80,10 +88,10 @@
 
 <p class="textAbstract">Задачи линейного программирования (ЗЛП), которая в общем виде формулируется как:</p>
 
-<div class="imgCenter"><img src="image/formula.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/formula.png" class="imageAbstract"></div>
 <p class="textAbstract">при ограничениях:</p>
 
-<div class="imgCenter"><img src="image/formula2.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/formula2.png" class="imageAbstract"></div>
 <p class="textAbstract">где</p>
 
 <p class="textAbstract">aij – коэффициенты при переменных;</p>
@@ -95,7 +103,7 @@
 
 <p class="textAbstract"> Система ограничений в развернутом виде записывается так:</p>
 
-<div class="imgCenter"><img src="image/formula3.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/formula3.png" class="imageAbstract"></div>
 
 <p class="TitleBio" id="titleTwo">МЕТОДЫ РЕШЕНИЯ ОДНОМЕРНЫХ ЗАДАЧ)</p>
 
@@ -113,7 +121,7 @@
     содержат две переменные.
     Найти минимальное значение функции Z=c1x1+c2x2 при ограничениях вида:</p>
 
-<div class="imgCenter"><img src="image/grafMetod.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/grafMetod.png" class="imageAbstract"></div>
 <p class="textAbstract"> Допустим, что система при условии совместна. Каждое из неравенств из систем и определяет
     полуплоскость с граничными прямыми:
     a<sub>i1</sub>x<sub>1</sub>+a<sub>i2</sub>x<sub>2</sub>=b<sub>i</sub>,(i=1,2..n);x<sub>1</sub>=0;x<sub>2</sub>=0
@@ -137,7 +145,7 @@
     причём минимальное значение принимает в точке E . Координаты точки находим, решая систему уравнений прямых DE и
     EF .</p>
 
-<div class="imgCenter"><img src="image/grafMetod2.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/grafMetod2.png" class="imageAbstract"></div>
 <p class="textAbstract">Рисунок 2.1 – Пример графического решения задачи линейного программирования с 6
     условиями.</p>
 
@@ -161,14 +169,14 @@
     содержащие переменные, переносятся в левую часть, свободные оставляются справа,
     т.е. задача записывается в виде системы равенств(рис 2.2).</p>
 
-<div class="imgCenter"><img src="image/simplMetod.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/simplMetod.png" class="imageAbstract"></div>
 <p class="textAbstract"> Далее эта система оформляется в виде симплекс-таблиц (рис 2.3).</p>
 
-<div class="imgCenter"><img src="image/simplTable.png" class="imageAbstract"></div>
-<p class="textAbstract">Полный перебор (или метод «грубой силы») – метод решения задачи путем перебора всех
+<div class="imgCenter"><img src="img/simplTable.png" class="imageAbstract"></div>
+<p class="textAbstract" id="partTwoThree">Полный перебор (или метод «грубой силы») – метод решения задачи путем перебора всех
     возможных вариантов.</p>
 
-<p class="textAbstract">Генетические алгоритмы были предложены Джоном Генри Холландом в 1970 году и относятся к так
+<p class="textAbstract" id="partTwoFour">Генетические алгоритмы были предложены Джоном Генри Холландом в 1970 году и относятся к так
     называемым метаалгоритмам.
     Идея – составление алгоритмов поиска на основе биологической модели механизмов естественного отбора.
     Базовыми понятиями являются: популяция, отбор, мутация, скрещивание.</p>
@@ -203,7 +211,7 @@
 
 <p class="textAbstract">7. Алгоритм прерывается после заданного числа итераций.</p>
 
-<div class="imgCenter"><img src="image/genAlg.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/genAlg.png" class="imageAbstract"></div>
 
 <p class="TitleBio" id="titleThree">3 ОЦЕНКА СЛОЖНОСТИ АЛГОРИТМА</p>
 

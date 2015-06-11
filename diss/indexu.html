@@ -11,20 +11,29 @@
 <ol class="referenceAbstract">
     <li>Мета і завдання</li>
     <li> Актуальність теми</li>
-    <li> Передбачувана наукова новизна</li>
+    <!--<li> Передбачувана наукова новизна</li>-->
     <li><a href="#titleOne">КЛАСИФІКАЦІЯ ЗАДАЧ РОЗПОДІЛУ РЕСУРСІВ (ЗЛП)</a></li>
     <li><a href="#partOneOne">1.1 Загальні поняття про розподіл ресурсів і класифікація задач </a></li>
     <li><a href="#partOneTwo">1.2 Математична модель задачі розподілу ресурсів</a></li>
     <li><a href="#titleTwo">2 МЕТОДИ РІШЕННЯ одновимірних задач</a></li>
     <li><a href="#partTwoOne">2.1 Графічний метод</a></li>
-    <li>2.2 Сiмплекс-метод</li>
-    <li>2.3 Повний перебор</li>
-    <li>2.4 Генетический алгоритм</li>
-    <li>3 ОЦІНКА СКЛАДНОСТI АЛГОРИТМУ</li>
-    <li>4 ОГЛЯД ПРОГРАМИ ДЛЯ ВИРІШЕННЯ ЗЛП
-    <li>
+    <li><a href="#partTwoTwo">2.2 Сiмплекс-метод</a></li>
+    <li><a href="#partTwoThree">2.3 Повний перебор</a></li>
+    <li><a href="#partTwoFour">2.4 Генетический алгоритм</a></li>
+    <li><a href="#titleThree">3 ОЦІНКА СКЛАДНОСТI АЛГОРИТМУ</a></li>
+    <li><a href="#titleFour">4 ОГЛЯД ПРОГРАМИ ДЛЯ ВИРІШЕННЯ ЗЛП</a></li>
+    <li><a href="#conclusion">ВИСНОВКИ</a></li>
 </ol>
+<p class="TitleBio" id="goals">Мета і завдання</p>
+<p class="textAbstract">Метою даної роботи є дослідження та оцінка ефективності алгоритму рішення одновимірних задач розподілу ресурсів.
+Для досягнення поставленої мети необхідно виконати наступні завдання: огляд існуючих алгоритмів, методів
+їх вирішення і дати оцінку з обчислювальної складності</p>
 
+<p class="TitleBio" id="actual">Актуальність теми</p>
+
+<p class="textAbstract">Актуальність теми полягає в необхідність обгрунтування наукових
+підходів до визначення оптимальності розподілу
+ресурсів за обсягом потреб.</p>
 
 <p class="TitleBio" id="titleOne">КЛАСИФІКАЦІЯ ЗАДАЧ РОЗПОДІЛУ РЕСУРСІВ (ЗЛП)</p>
 
@@ -79,10 +88,10 @@
 
 <p class="textAbstract">Завдання лінійного програмування (ЗЛП), яка в загальному вигляді формулюється як:</p>
 
-<div class="imgCenter"><img src="image/formula.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/formula.png" class="imageAbstract"></div>
 <p class="textAbstract">при обмеженнях:</p>
 
-<div class="imgCenter"><img src="image/formula2.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/formula2.png" class="imageAbstract"></div>
 <p class="textAbstract">де</p>
 
 <p class="textAbstract">aij – коефіцієнти при змінних;</p>
@@ -94,7 +103,7 @@
 
 <p class="textAbstract"> Система обмежень у розгорнутому вигляді записується так:</p>
 
-<div class="imgCenter"><img src="image/formula3.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/formula3.png" class="imageAbstract"></div>
 
 <p class="TitleBio" id="titleTwo">МЕТОДИ РІШЕННЯ ОДНОВИМIРНИХ ЗАДАЧ</p>
 
@@ -111,7 +120,7 @@
          містять дві змінні.
          Знайти мінімальне значення функції Z=c1x1+c2x2 при обмеженнях виду:</p>
 
-<div class="imgCenter"><img src="image/grafMetod.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/grafMetod.png" class="imageAbstract"></div>
 <p class="textAbstract"> Припустимо, що система за умови сумісна. Кожне з нерівностей із систем і визначає
     напівплощина з граничними прямими:
     a<sub>i1</sub>x<sub>1</sub>+a<sub>i2</sub>x<sub>2</sub>=b<sub>i</sub>,(i=1,2..n);x<sub>1</sub>=0;x<sub>2</sub>=0
@@ -135,7 +144,7 @@
     причому мінімальне значення приймає в точці Е. Координати точки знаходимо, вирішуючи систему рівнянь прямих DE і
     EF</p>
 
-<div class="imgCenter"><img src="image/grafMetod2.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/grafMetod2.png" class="imageAbstract"></div>
 <p class="textAbstract">Рисунок 2.1 – Приклад графічного рішення задачі лінійного програмування з 6 умовами.</p>
 
 <p class="TitleBio" id="partTwoTwo">Сiмплекс-метод </p>
@@ -158,14 +167,14 @@
     містять змінні, переносяться в ліву частину, вільні залишаються праворуч,
     тобто задача записується у вигляді системи рівностей(рис 2.2).</p>
 
-<div class="imgCenter"><img src="image/simplMetod.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/simplMetod.png" class="imageAbstract"></div>
 <p class="textAbstract"> Далі ця система оформляється у вигляді симплекс-таблиць (рис 2.3).</p>
 
-<div class="imgCenter"><img src="image/simplTable.png" class="imageAbstract"></div>
-<p class="textAbstract">Повний перебір (або метод «грубої сили») - метод вирішення задачі шляхом перебору всіх можливих
+<div class="imgCenter"><img src="img/simplTable.png" class="imageAbstract"></div>
+<p class="textAbstract" id="partTwoThree">Повний перебір (або метод «грубої сили») - метод вирішення задачі шляхом перебору всіх можливих
     варіантів.</p>
 
-<p class="textAbstract">Генетичні алгоритми були запропоновані Джоном Генрі Холландом в 1970 році і відносяться до так
+<p class="textAbstract" id="partTwoFour">Генетичні алгоритми були запропоновані Джоном Генрі Холландом в 1970 році і відносяться до так
     званим метаалгорітмам.
     Ідея - складання алгоритмів пошуку на основі біологічної моделі механізмів природного відбору.
     Базовими поняттями є: популяція, відбір, мутація, схрещування.</p>
@@ -200,7 +209,7 @@
 
 <p class="textAbstract">7.Алгоритм переривається після заданого числа ітерацій.</p>
 
-<div class="imgCenter"><img src="image/genAlg.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/genAlg.png" class="imageAbstract"></div>
 
 <p class="TitleBio" id="titleThree">3 ОЦIНКА CКЛАДНОСТI АЛГОРИТМУ</p>
 

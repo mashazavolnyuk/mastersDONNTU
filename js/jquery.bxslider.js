@@ -272,13 +272,13 @@
 		};
 
 		var loadElements = function(selector, callback){
-			var total = selector.find('img:not([src=""]), iframe').length;
+			var total = selector.find('imges:not([src=""]), iframe').length;
 			if(total === 0){
 				callback();
 				return;
 			}
 			var count = 0;
-			selector.find('img:not([src=""]), iframe').each(function(){
+			selector.find('imges:not([src=""]), iframe').each(function(){
 				$(this).one('load error', function(){
 				  if(++count === total){ callback(); }
 				}).each(function(){
@@ -705,13 +705,13 @@
 		};
 
 		/**
-		 * Appends img captions to the DOM
+		 * Appends imges captions to the DOM
 		 */
 		var appendCaptions = function(){
 			// cycle through each child
 			slider.children.each(function(index){
-				// get the img title attribute
-				var title = $(this).find('img:first').attr('title');
+				// get the imges title attribute
+				var title = $(this).find('imges:first').attr('title');
 				// append the caption
 				if(title !== undefined && ('' + title).length){
 					$(this).append('<div class="bx-caption"><span>' + title + '</span></div>');

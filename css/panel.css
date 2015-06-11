@@ -20,7 +20,7 @@ body{
     display: inline-block;
 }
 #avatar {
-    background-image: url("../img/avatar.png");
+    background-image: url("../imges/avatar.png");
     background-repeat: no-repeat;
     display: inline-block;
     background-size: contain;
@@ -77,16 +77,16 @@ body{
 
 }
 #ru {
-    background-image: url("../img/ru_flag.png");
+    background-image: url("../imges/ru_flag.png");
 }
 
 #uk {
-    background-image: url("../img/uk_flag.png");
+    background-image: url("../imges/uk_flag.png");
 }
 
 #en {
 
-    background-image: url("../img/en_flag.png");
+    background-image: url("../imges/en_flag.png");
 }
 #mainContent {
     top: 30%;
@@ -163,30 +163,30 @@ body{
 
 }
 
-#resume {
-    background-image: url("../img/icon_resume.png");
+#resume,#en_resume,#uk_resume {
+    background-image: url("../imges/icon_resume.png");
 }
 
-#bio {
-    background-image: url("../img/icon_bio.png");
+#bio,#uk_bio {
+    background-image: url("../imges/icon_bio.png");
 }
 
-#diploma {
+#diploma,#en_abst,#uk_abst {
 
-    background-image: url("../img/icon_diploma.png");
+    background-image: url("../imges/icon_diploma.png");
 }
 #library{
-    background-image: url("../img/icon_book.png");
+    background-image: url("../imges/icon_book.png");
 
 }
 #links{
-    background-image: url("../img/icon_links.png");
+    background-image: url("../imges/icon_links.png");
 }
 #report{
-    background-image: url("../img/icon_report.png");
+    background-image: url("../imges/icon_report.png");
 }
 #privateTitle{
-    background-image: url("../img/icon_star.png");
+    background-image: url("../imges/icon_star.png");
 }
 #en_left_panel{
 display: none;

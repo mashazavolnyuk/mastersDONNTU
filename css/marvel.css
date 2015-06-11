@@ -70,13 +70,13 @@ body {
     height: 50px;
 }
 #facebook{
-    background-image: url("../img/facebook.png");
+    background-image: url("../ind/img/facebook.png");
 }
 #twitte{
-    background-image: url("../img/twit.png");
+    background-image: url("../ind/img/twit.png");
 }
 #googlePlus{
-    background-image: url("../img/gPlus.png");
+    background-image: url("../ind/img/gPlus.png");
 }
 #textFollow{
     font-size: 30;

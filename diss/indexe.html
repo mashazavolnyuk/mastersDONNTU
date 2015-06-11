@@ -12,20 +12,26 @@
 <ol class="referenceAbstract">
     <li>Aim and research tasks</li>
     <li>Relevance of the topic</li>
-    <li>Supposed scientific novelty</li>
+    <!--<li>Supposed scientific novelty</li>-->
     <li><a href="#titleOne">CLASSIFICATION resource allocation problem (ZLP)</a></li>
     <li><a href="#partOneOne">1.1 General concepts of resource allocation and classification of problems </a></li>
     <li><a href="#partOneTwo">1.2 The mathematical model of the problem of resource allocation</a></li>
     <li><a href="#titleTwo">2 METHODS OF DECISION-dimensional problems</a></li>
     <li><a href="#partTwoOne">2.1 Graphical method</a></li>
-    <li>2.2 Simplex method</li>
-    <li>2.3 Brute force</li>
-    <li>2.4 Genetic Algorithm</li>
-    <li>3 Evaluation of the complexity of algorithms</li>
-    <li>4 REVIEW OF THE PROGRAMME FOR ACTION ZLP</li>
-
+    <li><a href="#partTwoTwo">2.2 Simplex method</a></li>
+    <li><a href="#partTwoThree"> 2.3 Brute force</a></li>
+    <li><a href="#partTwoFour">2.4 Genetic Algorithm</a></li>
+    <li><a href="#titleThree">3 Evaluation of the complexity of algorithms</a></li>
+    <li><a href="#titleFour">4 REVIEW OF THE PROGRAMME FOR ACTION ZLP</a></li>
+    <li><a href="#conclusion">CONCLUSIONS</a></li>
 </ol>
+<p class="TitleBio" id="goal">Aim and research tasks</p>
+<p class="textAbstract">The aim of this work is to study and evaluation of algorithms for solving one-dimensional problems of resource allocation.
+To achieve this goal the following tasks: review of existing algorithms and methods
+their decisions and to assess on the computational complexity</p>
 
+<p class="TitleBio" id="actual">Relevance of the topic</p>
+<p class="textAbstract">Relevance of the topic is the need to study scientific approaches to determine the optimal allocation of resources in terms of needs.</p>
 
 <p class="TitleBio" id="titleOne">CLASSIFICATION resource allocation problem (ZLP)</p>
 
@@ -78,10 +84,10 @@
 
 <p class="textAbstract">Linear programming problem (ZLP), which is formulated in general terms as:</p>
 
-<div class="imgCenter"><img src="image/formula.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/formula.png" class="imageAbstract"></div>
 <p class="textAbstract">with restrictions:</p>
 
-<div class="imgCenter"><img src="image/formula2.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/formula2.png" class="imageAbstract"></div>
 <p class="textAbstract">where</p>
 
 <p class="textAbstract">aij – the coefficients of the variables;</p>
@@ -93,7 +99,7 @@
 
 <p class="textAbstract">The system of restrictions in expanded form is written as:</p>
 
-<div class="imgCenter"><img src="image/formula3.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/formula3.png" class="imageAbstract"></div>
 
 <p class="TitleBio" id="titleTwo">METHODS OF DECISION-dimensional problems</p>
 
@@ -110,7 +116,7 @@
 <p class="textAbstract">Let a linear programming problem is given in a two-dimensional space, there are restrictions
         It contains two variables.
          Find the minimum value of the function Z = c1x1 + c2x2 under the constraints of the form:</p>
-<div class="imgCenter"><img src="image/grafMetod.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/grafMetod.png" class="imageAbstract"></div>
 <p class="textAbstract"> Assume that the system is sharing. Each of the inequalities of the system and determines
          half-plane with boundary lines:
     a<sub>i1</sub>x<sub>1</sub>+a<sub>i2</sub>x<sub>2</sub>=b<sub>i</sub>,(i=1,2..n);x<sub>1</sub>=0;x<sub>2</sub>=0
@@ -132,7 +138,7 @@
 <p class="textAbstract">If a polygon making limited (Figure 2.1)
          the straight line becomes twice the reference with respect to the polygon solutions (points B and E),
          Moreover, the minimum value takes at E. The coordinates of the point is, solving the system of equations of lines and DE</p>
-<div class="imgCenter"><img src="image/grafMetod2.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/grafMetod2.png" class="imageAbstract"></div>
 <p class="textAbstract">Figure 2.1 - Example of graphical solution of linear programming problem 6
          conditions.</p>
 
@@ -156,14 +162,14 @@
          comprising the variables are transferred to the left side, the right free retained,
          ie problem is written as a system of equations (Figure 2.2).</p>
 
-<div class="imgCenter"><img src="image/simplMetod.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/simplMetod.png" class="imageAbstract"></div>
 <p class="textAbstract"> Further, this system takes the form of the simplex table (Figure 2.3).</p>
 
-<div class="imgCenter"><img src="image/simplTable.png" class="imageAbstract"></div>
-<p class="textAbstract">Exhaustive search (or "brute force") - a method of solving the problem by trying all
+<div class="imgCenter"><img src="img/simplTable.png" class="imageAbstract"></div>
+<p class="textAbstract" id="partTwoThree">Exhaustive search (or "brute force") - a method of solving the problem by trying all
          options.</p>
 
-<p class="textAbstract">Genetic algorithms have been proposed by John Henry Holland in 1970 and belong to the so-
+<p class="textAbstract" id="partTwoFour">Genetic algorithms have been proposed by John Henry Holland in 1970 and belong to the so-
          metaalgoritmam called.
          The idea - Preparation of search algorithms based on biological models of the mechanisms of natural selection.
          The basic concepts are: population, selection, mutation, crossover.</p>
@@ -199,7 +205,7 @@
 
 <p class="textAbstract">7. The algorithm is interrupted after a predetermined number of iterations.</p>
 
-<div class="imgCenter"><img src="image/genAlg.png" class="imageAbstract"></div>
+<div class="imgCenter"><img src="img/genAlg.png" class="imageAbstract"></div>
 
 <p class="TitleBio" id="titleThree">3 Evaluation of the complexity of algorithms</p>
 
